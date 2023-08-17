@@ -1,0 +1,24 @@
+﻿  lib3ds_atmosphere.c
+  lib3ds_background.c
+  lib3ds_camera.c
+  lib3ds_chunk.c
+  lib3ds_chunktable.c
+  lib3ds_file.c
+  lib3ds_io.c
+  lib3ds_light.c
+  lib3ds_material.c
+  lib3ds_math.c
+  lib3ds_matrix.c
+  lib3ds_mesh.c
+  lib3ds_node.c
+  lib3ds_quat.c
+  lib3ds_shadow.c
+  lib3ds_track.c
+  lib3ds_util.c
+  lib3ds_vector.c
+  lib3ds_viewport.c
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\Users\KETI\Desktop\PTAM\src\lib3ds-20080909\lib3ds-20080909\Release\lib3ds.dll) does not match the Linker's OutputFile property value (C:\Users\KETI\Desktop\PTAM\src\lib3ds-20080909\lib3ds-20080909\Release\lib3ds-2_0.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(lib3ds) does not match the Linker's OutputFile property value (lib3ds-2_0). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library C:\Users\KETI\Desktop\PTAM\src\lib3ds-20080909\lib3ds-20080909\Release\lib3ds.lib and object C:\Users\KETI\Desktop\PTAM\src\lib3ds-20080909\lib3ds-20080909\Release\lib3ds.exp
+  lib3ds.vcxproj -> C:\Users\KETI\Desktop\PTAM\src\lib3ds-20080909\lib3ds-20080909\Release\lib3ds.dll

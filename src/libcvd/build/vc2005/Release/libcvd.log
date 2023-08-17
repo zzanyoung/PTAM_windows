@@ -1,0 +1,11 @@
+﻿  eventobject.cpp
+C:\Users\KETI\Desktop\PTAM\src\libcvd\cvd_src\eventobject.cpp(39,62): warning C4838: conversion from 'unsigned long' to 'long' requires a narrowing conversion
+  synchronized.cpp
+  thread.cpp
+  videosource.cpp
+  convert_rgb_to_y.cc
+  gradient.cc
+  median_3x3.cc
+  yuv422_wrapper.cc
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1545,5): warning MSB8012: TargetPath(C:\Users\KETI\Desktop\PTAM\src\libcvd\build\vc2005\Release\libcvd.lib) does not match the Library's OutputFile property value (C:\Users\KETI\Desktop\PTAM\src\libcvd\lib\libcvd.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  libcvd.vcxproj -> C:\Users\KETI\Desktop\PTAM\src\libcvd\build\vc2005\Release\libcvd.lib
