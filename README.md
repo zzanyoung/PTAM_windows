@@ -2,8 +2,8 @@
 
 Modify PTAM to run on 64-bit Windows.
 
-#### Oxford-PTAM
+- #### Oxford-PTAM
 https://github.com/Oxford-PTAM/PTAM-GPL
 
-#### Reference
+- #### Reference
 https://darkpgmr.tistory.com/130
