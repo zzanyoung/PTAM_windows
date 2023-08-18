@@ -57,7 +57,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>~\src\PTAM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -67,7 +67,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcvdd.lib;gvars3d.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;%(AdditionalDependencies);C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_core2410.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_highgui2410.lib</AdditionalDependencies>
+      <AdditionalDependencies>libcvdd.lib;gvars3d.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;%(AdditionalDependencies);~\set\ptam_lib\opencv_core2410.lib;~\set\ptam_lib\opencv_highgui2410.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
@@ -76,7 +76,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>~\src\PTAM;~\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -85,8 +85,8 @@
       <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;%(AdditionalDependencies);C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_core2410.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_highgui2410.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;%(AdditionalDependencies);~\set\ptam_lib\opencv_core2410.lib;~\set\ptam_lib\opencv_highgui2410.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>~\set\ptam_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -95,7 +95,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\VideoSource_Linux_OpenCV.cc" />
+    <ClCompile Include="..\VideoSource_Linux_OpenCV.cc" />
     <ClCompile Include="ATANCamera.cc" />
     <ClCompile Include="CalibCornerPatch.cc" />
     <ClCompile Include="CalibImage.cc" />

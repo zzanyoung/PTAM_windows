@@ -40,15 +40,15 @@
     <OutDir>Debug\</OutDir>
     <IntDir>Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\KETI\Desktop\PTAM.bak_beforeRemove1394camera_edit\set\ptam_include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\KETI\Desktop\PTAM.bak_beforeRemove1394camera_edit\set\ptam_lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>Release\</OutDir>
     <IntDir>Release\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\KETI\Desktop\PTAM.bak_beforeRemove1394camera_edit\set\ptam_include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\KETI\Desktop\PTAM.bak_beforeRemove1394camera_edit\set\ptam_lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -65,7 +65,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>libcvdd.lib;gvars3d.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
@@ -73,7 +74,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>~\src\PTAM;~\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -82,8 +83,8 @@
       <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_core2410.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_highgui2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;~\set\ptam_lib\opencv_core2410.lib;~\set\ptam_lib\opencv_highgui2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>~\set\ptam_include;~\set\ptam_lib</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -119,7 +120,7 @@
     <ClInclude Include="VideoSource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\VideoSource_Linux_OpenCV.cc" />
+    <ClCompile Include="..\VideoSource_Linux_OpenCV.cc" />
     <ClCompile Include="ARDriver.cc" />
     <ClCompile Include="ATANCamera.cc" />
     <ClCompile Include="Bundle.cc" />
