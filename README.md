@@ -1,4 +1,4 @@
-# RunnablePTAM_Win64
+# PTAM_x64windows
 
 Modify PTAM to run on 64-bit Windows.
 
