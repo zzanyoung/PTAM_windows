@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -64,9 +64,8 @@
       <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcvdd.lib;gvars3d.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>
-      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_core2410.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_highgui2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
@@ -74,7 +73,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>~\src\PTAM;~\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -83,8 +82,8 @@
       <AdditionalOptions>/FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;~\set\ptam_lib\opencv_core2410.lib;~\set\ptam_lib\opencv_highgui2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>~\set\ptam_include;~\set\ptam_lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcvd.lib;gvars3.lib;glew32.lib;opengl32.lib;libblas.lib;liblapack.lib;pthreadVCE2.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_core2410.lib;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib\opencv_highgui2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include;C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_lib</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -96,6 +95,7 @@
     <ClInclude Include="ARDriver.h" />
     <ClInclude Include="ATANCamera.h" />
     <ClInclude Include="EyeGame.h" />
+    <ClInclude Include="global_variables.h" />
     <ClInclude Include="GLWindow2.h" />
     <ClInclude Include="GLWindowMenu.h" />
     <ClInclude Include="HomographyInit.h" />
@@ -120,11 +120,12 @@
     <ClInclude Include="VideoSource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\VideoSource_Linux_OpenCV.cc" />
+    <ClCompile Include="..\..\..\..\Downloads\VideoSource_Linux_OpenCV.cc" />
     <ClCompile Include="ARDriver.cc" />
     <ClCompile Include="ATANCamera.cc" />
     <ClCompile Include="Bundle.cc" />
     <ClCompile Include="EyeGame.cc" />
+    <ClCompile Include="global_variables.cpp" />
     <ClCompile Include="GLWindow2.cc" />
     <ClCompile Include="GLWindowMenu.cc" />
     <ClCompile Include="HomographyInit.cc" />

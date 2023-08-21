@@ -18,6 +18,10 @@
 #include <fstream>
 #include <fcntl.h>
 
+//
+#include "global_variables.h"
+//
+
 
 using namespace CVD;
 using namespace std;
@@ -1009,14 +1013,22 @@ void Tracker::CalcSBIRotation()
   result_pair = mpSBIThisFrame->IteratePosRelToTarget(*mpSBILastFrame, 6);
   SE3<> se3Adjust = SmallBlurryImage::SE3fromSE2(result_pair.first, mCamera);
   mv6SBIRot = se3Adjust.ln();
+  
+    if (globalInteger < 5)
+    {
+        std::cout << "----------------------------------------------------" << std::endl;
+        std::cout << "------------Tracker::CalcSBIRotation-----------" << std::endl;
+        std::cout << "----------------------------------------------------" << std::endl;
+        std::cout << "mpSBILastFrame: " << mpSBILastFrame << std::endl; // mpSBILastFrame 변수의 메모리 주소
+        std::cout << "mpSBIThisFrame: " << mpSBIThisFrame << std::endl << std::endl;  // mpSBIThisFrame 변수의 메모리 주소
+        std::cout << "result_pair.first: " << std::endl << result_pair.first << std::endl;  // result_pair 변수의 첫 번째 요소 (SE2<> 타입)  
+        std::cout << "result_pair.second: " << std::endl << result_pair.second << std::endl << std::endl;  //result_pair 변수의 두 번째 요소 (double 타입) 
+        std::cout << "se3Adjust: " << std::endl << se3Adjust << std::endl; // se3Adjust 변수 (SE3<> 타입) 변환 행렬
+        std::cout << "mv6SBIRot: " << mv6SBIRot << std::endl;  // mv6SBIRot 변수 (Vector<6> 타입) 값 
+        std::cout << "----------------------------------------------------" << std::endl; 
+        globalInteger++;
+    }
 }
 
 ImageRef TrackerData::irImageSize;  // Static member of TrackerData lives here
-
-
-
-
-
-
-
 
