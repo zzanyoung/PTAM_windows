@@ -1,180 +1,45 @@
-﻿  VideoSource_Linux_OpenCV.cc
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\opencv2\flann\dist.h(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\opencv2\flann\logger.h(66,22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  ARDriver.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\ARDriver.cc(249,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-  ATANCamera.cc
-  Bundle.cc
-  EyeGame.cc
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(120,78): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(120,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(120,15): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(121,78): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(121,47): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(121,15): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(123,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(123,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(124,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(124,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(144,77): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(144,50): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(144,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(145,77): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(145,50): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(145,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(146,77): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(146,50): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(146,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(147,77): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(147,50): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(147,19): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(149,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(149,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(150,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(150,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(151,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(151,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(152,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(152,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(165,80): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(165,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(165,15): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(166,80): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(166,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(166,15): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(168,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(168,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(169,20): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\EyeGame.cc(169,18): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-  GLWindow2.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\GLWindow2.cc(133,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\GLWindow2.cc(133,23): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\GLWindow2.cc(145,30): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\GLWindow2.cc(145,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\GLWindow2.cc(177,22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  GLWindowMenu.cc
-  HomographyInit.cc
-  KeyFrame.cc
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-  main.cc
-  Map.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(22,15): warning C4099: 'KeyFrame': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(22): message : see declaration of 'KeyFrame'
-  MapMaker.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(21): message : see declaration of 'MapPoint'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(22,15): warning C4099: 'KeyFrame': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(75): message : see declaration of 'KeyFrame'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(24,19): warning C4099: 'MapMakerData': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapMaker.h(29): message : see declaration of 'MapMakerData'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-  MapPoint.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(26): message : see declaration of 'MapPoint'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(76,1): warning C4099: 'KeyFrame': type name first seen using 'class' now seen using 'struct'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(75): message : see declaration of 'KeyFrame'
-  MapViewer.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapViewer.h(21,10): warning C4099: 'Map': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(24): message : see declaration of 'Map'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(22,15): warning C4099: 'KeyFrame': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(22): message : see declaration of 'KeyFrame'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(26): message : see declaration of 'MapPoint'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapViewer.cc(65,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapViewer.cc(74,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  MiniPatch.cc
-  PatchFinder.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(26): message : see declaration of 'MapPoint'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(76,1): warning C4099: 'KeyFrame': type name first seen using 'class' now seen using 'struct'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(75): message : see declaration of 'KeyFrame'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\PatchFinder.cc(265,44): warning C4244: '=': conversion from 'Precision' to '_Ty1', possible loss of data
-          with
-          [
-              Precision=TooN::DefaultPrecision
-          ]
-          and
-          [
-              _Ty1=float
-          ]
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\PatchFinder.cc(266,45): warning C4244: '=': conversion from 'Precision' to '_Ty2', possible loss of data
-          with
-          [
-              Precision=TooN::DefaultPrecision
-          ]
-          and
-          [
-              _Ty2=float
-          ]
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\PatchFinder.cc(329,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\PatchFinder.cc(330,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\PatchFinder.cc(331,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\PatchFinder.cc(332,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  Relocaliser.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(21,16): warning C4099: 'MapPoint': type name first seen using 'class' now seen using 'struct'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29): message : see declaration of 'MapPoint'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-  ShiTomasi.cc
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(Release\)에 다른 프로젝트(CameraCalibrator.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
   SmallBlurryImage.cc
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-  System.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(25,1): warning C4099: 'Map': type name first seen using 'class' now seen using 'struct'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(24): message : see declaration of 'Map'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(21): message : see declaration of 'MapPoint'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapViewer.h(21,10): warning C4099: 'Map': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(24): message : see declaration of 'Map'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\System.cc(32,14): warning C4390: ';': empty controlled statement found; is this the intent?
-  Generating Code...
-  Compiling...
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': 매크로 재정의
+C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : 'M_SQRT1_2'의 이전 정의를 참조하십시오.
   Tracker.cc
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(21): message : see declaration of 'MapPoint'
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': macro redefinition
-C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : see previous definition of 'M_SQRT1_2'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(22,15): warning C4099: 'KeyFrame': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(75): message : see declaration of 'KeyFrame'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(24,19): warning C4099: 'MapMakerData': type name first seen using 'struct' now seen using 'class'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapMaker.h(29): message : see declaration of 'MapMakerData'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\TrackerData.h(17,1): warning C4099: 'TrackerData': type name first seen using 'class' now seen using 'struct'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\TrackerData.h(16): message : see declaration of 'TrackerData'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Tracker.cc(209,31): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Tracker.cc(211,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-  Generating Code...
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
-  libcvd.lib(win32.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
-LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-  Generating code
-  Finished generating code
-libcvd.lib(win32.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(win32.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(utility_float.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(utility_float.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(gltext.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(gltext.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(glwindow.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(glwindow.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(half_sample.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(half_sample.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(fast_corner.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(fast_corner.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(faster_corner_10.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(faster_corner_10.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(thread.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(thread.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(cvd_timer.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(cvd_timer.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(convolve_gaussian.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(convolve_gaussian.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(nonmax_suppression.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(nonmax_suppression.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(fast_10_detect.obj) : warning LNK4099: PDB 'libcvd.pdb' was not found with 'libcvd.lib(fast_10_detect.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'; linking object as if no debug info
-libcvd.lib(convolution.obj) : warning LNK4099: PDB '' was not found with 'libcvd.lib(convolution.obj)' or at ''; linking object as if no debug info
-gvars3.lib(serialize.obj) : warning LNK4099: PDB '' was not found with 'gvars3.lib(serialize.obj)' or at ''; linking object as if no debug info
-gvars3.lib(gvars3.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(gvars3.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
-gvars3.lib(GStringUtil.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(GStringUtil.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
-gvars3.lib(GUI.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(GUI.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
-gvars3.lib(inst.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(inst.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
-gvars3.lib(gvars2.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(gvars2.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
-gvars3.lib(GUI_impl_noreadline.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(GUI_impl_noreadline.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
-gvars3.lib(GUI_non_readline.obj) : warning LNK4099: PDB 'gvars3.pdb' was not found with 'gvars3.lib(GUI_non_readline.obj)' or at 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'; linking object as if no debug info
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(29,15): warning C4099: 'MapPoint': 처음에는 'struct'을(를) 사용하여 형식 이름을 표시했는데 이제는 'class'을(를) 사용하여 표시합니다.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Map.h(21): message : 'MapPoint' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(29,1): warning C4005: 'M_SQRT1_2': 매크로 재정의
+C:\Users\KETI\Desktop\PTAM.Edit\set\ptam_include\TooN\helpers.h(40): message : 'M_SQRT1_2'의 이전 정의를 참조하십시오.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(22,15): warning C4099: 'KeyFrame': 처음에는 'struct'을(를) 사용하여 형식 이름을 표시했는데 이제는 'class'을(를) 사용하여 표시합니다.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\KeyFrame.h(75): message : 'KeyFrame' 선언을 참조하십시오.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapPoint.h(24,19): warning C4099: 'MapMakerData': 처음에는 'struct'을(를) 사용하여 형식 이름을 표시했는데 이제는 'class'을(를) 사용하여 표시합니다.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\MapMaker.h(29): message : 'MapMakerData' 선언을 참조하십시오.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\TrackerData.h(17,1): warning C4099: 'TrackerData': 처음에는 'class'을(를) 사용하여 형식 이름을 표시했는데 이제는 'struct'을(를) 사용하여 표시합니다.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\TrackerData.h(16): message : 'TrackerData' 선언을 참조하십시오.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Tracker.cc(213,31): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Tracker.cc(215,24): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+  코드를 생성하고 있습니다...
+LINK : warning LNK4075: '/INCREMENTAL'이(가) '/OPT:ICF' 사양으로 인해 무시됩니다.
+  libcvd.lib(win32.obj) : /GL로 컴파일한 MSIL .netmodule 또는 모듈이 있습니다. /LTCG를 지정하여 링크를 다시 시작하십시오. /LTCG를 링크 명령줄에 추가하면 링커 성능이 향상됩니다.
+LINK : warning LNK4075: '/INCREMENTAL'이(가) '/LTCG' 사양으로 인해 무시됩니다.
+  코드를 생성하고 있습니다.
+  코드를 생성했습니다.
+libcvd.lib(win32.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(win32.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(utility_float.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(utility_float.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(gltext.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(gltext.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(glwindow.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(glwindow.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(half_sample.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(half_sample.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(fast_corner.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(fast_corner.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(faster_corner_10.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(faster_corner_10.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(thread.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(thread.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(cvd_timer.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(cvd_timer.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(convolve_gaussian.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(convolve_gaussian.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(nonmax_suppression.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(nonmax_suppression.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(fast_10_detect.obj) : warning LNK4099: 'libcvd.pdb' PDB를 'libcvd.lib(fast_10_detect.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\libcvd.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+libcvd.lib(convolution.obj) : warning LNK4099: '' PDB를 'libcvd.lib(convolution.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(serialize.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(serialize.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(gvars3.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(gvars3.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(GStringUtil.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(GStringUtil.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(GUI.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(GUI.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(inst.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(inst.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(gvars2.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(gvars2.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(GUI_impl_noreadline.obj) : warning LNK4099: '' PDB를 'gvars3.lib(GUI_impl_noreadline.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+gvars3.lib(GUI_non_readline.obj) : warning LNK4099: 'gvars3.pdb' PDB를 'gvars3.lib(GUI_non_readline.obj)' 또는 'C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\gvars3.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
   PTAM.vcxproj -> C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\PTAM.exe

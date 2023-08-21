@@ -49,109 +49,102 @@ namespace TooN {
 template <typename Precision = double>
 class SE3 {
 public:
-	/// Default constructor. Initialises the the rotation to zero (the identity) and the translation to zero
+	// 기본 생성자. 회전은 단위 회전(Identity)으로, 변환은 영행렬로 초기화됩니다.
 	inline SE3() : my_translation(Zeros) {}
 
-	template <int S, typename P, typename A> 
-	SE3(const SO3<Precision> & R, const Vector<S, P, A>& T) : my_rotation(R), my_translation(T) {}
+	// 회전 SO3와 변환 벡터를 사용하여 SE3를 생성합니다.
 	template <int S, typename P, typename A>
-	SE3(const Vector<S, P, A> & v) { *this = exp(v); }
+	SE3(const SO3<Precision>& R, const Vector<S, P, A>& T) : my_rotation(R), my_translation(T) {}
 
-	/// Returns the rotation part of the transformation as a SO3
-	inline SO3<Precision>& get_rotation(){return my_rotation;}
-	/// @overload
-	inline const SO3<Precision>& get_rotation() const {return my_rotation;}
+	// Vector를 사용하여 SE3를 생성합니다. (Lie 대수의 지수 연산)
+	template <int S, typename P, typename A>
+	SE3(const Vector<S, P, A>& v) { *this = exp(v); }
 
-	/// Returns the translation part of the transformation as a Vector
-	inline Vector<3, Precision>& get_translation() {return my_translation;}
-	/// @overload
-	inline const Vector<3, Precision>& get_translation() const {return my_translation;}
+	// 회전 부분을 반환합니다.
+	inline SO3<Precision>& get_rotation() { return my_rotation; }
+	inline const SO3<Precision>& get_rotation() const { return my_rotation; }
 
-	/// Exponentiate a Vector in the Lie Algebra to generate a new SE3.
-	/// See the Detailed Description for details of this vector.
-	/// @param vect The Vector to exponentiate
+	// 변환 부분을 반환합니다.
+	inline Vector<3, Precision>& get_translation() { return my_translation; }
+	inline const Vector<3, Precision>& get_translation() const { return my_translation; }
+
+	// Lie 대수의 지수 연산을 사용하여 Vector를 사용하여 새로운 SE3를 생성합니다.
 	template <int S, typename P, typename A>
 	static inline SE3 exp(const Vector<S, P, A>& vect);
 
-
-	/// Take the logarithm of the matrix, generating the corresponding vector in the Lie Algebra.
-	/// See the Detailed Description for details of this vector.
+	// SE3 행렬을 Lie 대수로 변환합니다.
 	static inline Vector<6, Precision> ln(const SE3& se3);
-	/// @overload
 	inline Vector<6, Precision> ln() const { return SE3::ln(*this); }
 
+	// 역변환을 반환합니다.
 	inline SE3 inverse() const {
 		const SO3<Precision> rinv = get_rotation().inverse();
-		return SE3(rinv, -(rinv*my_translation));
+		return SE3(rinv, -(rinv * my_translation));
 	}
 
-	/// Right-multiply by another SE3 (concatenate the two transformations)
-	/// @param rhs The multipier
+	// 오른쪽에 다른 SE3를 곱하여 변환을 결합합니다.
 	inline SE3& operator *=(const SE3& rhs) {
 		get_translation() += get_rotation() * rhs.get_translation();
 		get_rotation() *= rhs.get_rotation();
 		return *this;
 	}
 
-	/// Right-multiply by another SE3 (concatenate the two transformations)
-	/// @param rhs The multipier
-	inline SE3 operator *(const SE3& rhs) const { return SE3(get_rotation()*rhs.get_rotation(), get_translation() + get_rotation()*rhs.get_translation()); }
+	// 오른쪽에 다른 SE3를 곱하여 변환을 결합합니다.
+	inline SE3 operator *(const SE3& rhs) const {
+		return SE3(get_rotation() * rhs.get_rotation(), get_translation() + get_rotation() * rhs.get_translation());
+	}
 
+	// 왼쪽에 다른 SE3를 곱하여 변환을 결합합니다.
 	inline SE3& left_multiply_by(const SE3& left) {
 		get_translation() = left.get_translation() + left.get_rotation() * get_translation();
 		get_rotation() = left.get_rotation() * get_rotation();
 		return *this;
 	}
 
-	static inline Matrix<4,4,Precision> generator(int i){
-		Matrix<4,4,Precision> result(Zeros);
-		if(i < 3){
-			result[i][3]=1;
+	// 생성자를 위한 generator 함수로서 SO3의 각각의 축에 대한 행렬을 생성합니다.
+	static inline Matrix<4, 4, Precision> generator(int i) {
+		Matrix<4, 4, Precision> result(Zeros);
+		if (i < 3) {
+			result[i][3] = 1;
 			return result;
 		}
-		result[(i+1)%3][(i+2)%3] = -1;
-		result[(i+2)%3][(i+1)%3] = 1;
+		result[(i + 1) % 3][(i + 2) % 3] = -1;
+		result[(i + 2) % 3][(i + 1) % 3] = 1;
 		return result;
 	}
 
-  /// Returns the i-th generator times pos
-  template<typename Base>
-  inline static Vector<4,Precision> generator_field(int i, const Vector<4, Precision, Base>& pos)
-  {
-    Vector<4, Precision> result(Zeros);
-    if(i < 3){
-      result[i]=pos[3];
-      return result;
-    }
-    result[(i+1)%3] = - pos[(i+2)%3];
-    result[(i+2)%3] = pos[(i+1)%3];
-    return result;
-  }
-  
-	/// Transfer a matrix in the Lie Algebra from one
-	/// co-ordinate frame to another. This is the operation such that for a matrix 
-	/// \f$ B \f$, 
-	/// \f$ e^{\text{Adj}(v)} = Be^{v}B^{-1} \f$
-	/// @param M The Matrix to transfer
-	template<int S, typename Accessor>
-	inline Vector<6, Precision> adjoint(const Vector<S,Precision, Accessor>& vect)const;
+	// generator 함수를 사용하여 Lie 대수의 변환을 수행합니다.
+	template <typename Base>
+	inline static Vector<4, Precision> generator_field(int i, const Vector<4, Precision, Base>& pos) {
+		Vector<4, Precision> result(Zeros);
+		if (i < 3) {
+			result[i] = pos[3];
+			return result;
+		}
+		result[(i + 1) % 3] = -pos[(i + 2) % 3];
+		result[(i + 2) % 3] = pos[(i + 1) % 3];
+		return result;
+	}
 
-	/// Transfer covectors between frames (using the transpose of the inverse of the adjoint)
-	/// so that trinvadjoint(vect1) * adjoint(vect2) = vect1 * vect2
-	template<int S, typename Accessor>
-	inline Vector<6, Precision> trinvadjoint(const Vector<S,Precision,Accessor>& vect)const;
-	
-	///@overload
-	template <int R, int C, typename Accessor>
-	inline Matrix<6,6,Precision> adjoint(const Matrix<R,C,Precision,Accessor>& M)const;
+	// Lie 대수의 Adjoint 연산을 수행합니다.
+	template <int S, typename Accessor>
+	inline Vector<6, Precision> adjoint(const Vector<S, Precision, Accessor>& vect) const;
 
-	///@overload
+	// Lie 대수의 전치 역행렬 Adjoint 연산을 수행합니다.
+	template <int S, typename Accessor>
+	inline Vector<6, Precision> trinvadjoint(const Vector<S, Precision, Accessor>& vect) const;
+
+	// Adjoint 연산을 Matrix에 적용합니다.
 	template <int R, int C, typename Accessor>
-	inline Matrix<6,6,Precision> trinvadjoint(const Matrix<R,C,Precision,Accessor>& M)const;
+	inline Matrix<6, 6, Precision> adjoint(const Matrix<R, C, Precision, Accessor>& M) const;
+
+	// 전치 역행렬 Adjoint 연산을 Matrix에 적용합니다.
+	template <int R, int C, typename Accessor>
+	inline Matrix<6, 6, Precision> trinvadjoint(const Matrix<R, C, Precision, Accessor>& M) const;
 
 private:
-	SO3<Precision> my_rotation;
-	Vector<3, Precision> my_translation;
+	SO3<Precision> my_rotation; // 회전 부분을 저장하는 SO3 객체
+	Vector<3, Precision> my_translation; // 변환 부분을 저장하는 벡터
 };
 
 // transfers a vector in the Lie algebra

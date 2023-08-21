@@ -6,6 +6,9 @@
 #include <TooN/se2.h>
 #include <TooN/Cholesky.h>
 #include <TooN/wls.h>
+//
+#include "global_variables.h"
+//
 
 using namespace CVD;
 using namespace std;
@@ -197,6 +200,18 @@ pair<SE2<>,double> SmallBlurryImage::IteratePosRelToTarget(SmallBlurryImage &oth
       se2Update.get_rotation() = SO2<>::exp(-v4Update[2]);
       se2CtoC = se2CtoC * se2Update;
       dMeanOffset -= v4Update[3];
+
+	  if (globalInteger < 5)
+	  {
+		std::cout << "		-----------------------------------------------------------------------" << std::endl;
+		std::cout << "		------------SmallBlurryImage::IteratePosRelToTarget-----------" << std::endl;
+		std::cout << "		-----------------------------------------------------------------------" << std::endl;
+		std::cout << "		Iteration " << it + 1 << ":" << std::endl << std::endl; // 반복 횟수
+		std::cout << "		dFinalScore: " << dFinalScore << std::endl << std::endl; 
+		std::cout << "		v4Update: " << std::endl << v4Update << std::endl << std::endl; // v4Update 변수 (Vector<4> 타입) 값
+		std::cout << "		se2CtoC: " << std::endl << se2CtoC << std::endl; 
+		std::cout << "		dMeanOffset: " << dMeanOffset << std::endl << std::endl; 
+	  }
     }
 
   result_pair.first = se2CtoC;
