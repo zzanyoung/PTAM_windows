@@ -1025,7 +1025,7 @@ void Tracker::CalcSBIRotation()
         std::cout << "result_pair.second: " << std::endl << result_pair.second << std::endl << std::endl;  //result_pair 변수의 두 번째 요소 (double 타입) 
         std::cout << "se3Adjust: " << std::endl << se3Adjust << std::endl; // se3Adjust 변수 (SE3<> 타입) 변환 행렬
         std::cout << "mv6SBIRot: " << mv6SBIRot << std::endl;  // mv6SBIRot 변수 (Vector<6> 타입) 값 
-        std::cout << "---------------------------------------------------- " << std::endl; 
+        std::cout << "----------------------------------------------------" << std::endl; 
         globalInteger++;
     }
 }
