@@ -18,6 +18,10 @@
 #include <fstream>
 #include <fcntl.h>
 
+//
+#include "global_variables.h"
+//
+
 
 using namespace CVD;
 using namespace std;
@@ -1012,11 +1016,4 @@ void Tracker::CalcSBIRotation()
 }
 
 ImageRef TrackerData::irImageSize;  // Static member of TrackerData lives here
-
-
-
-
-
-
-
 

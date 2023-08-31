@@ -1,1 +1,3 @@
 C:\Users\KETI\Desktop\PTAM.Edit\src\PTAM\Release\PTAM.exe
+C:\Users\KETI\Desktop\PTAM_x64.edit\src\PTAM\Release\PTAM.exe
+C:\Users\KETI\Desktop\PTAM_x64\src\PTAM\Release\PTAM.exe

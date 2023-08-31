@@ -90,6 +90,9 @@
     <ClInclude Include="VideoSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="global_variables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ARDriver.cc">
@@ -152,7 +155,10 @@
     <ClCompile Include="Tracker.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\VideoSource_Linux_OpenCV.cc">
+    <ClCompile Include="..\..\..\..\Downloads\VideoSource_Linux_OpenCV.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global_variables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

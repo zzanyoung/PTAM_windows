@@ -12,6 +12,7 @@
 #include <TooN/se3.h>
 #include "KeyFrame.h"
 #include "ATANCamera.h"
+#include "global_variables.h"
 
 class SmallBlurryImage
 {
@@ -27,6 +28,7 @@ class SmallBlurryImage
 protected:
   CVD::Image<CVD::byte> mimSmall;
   CVD::Image<float> mimTemplate;
+  CVD::Image<float>* pmimTemplate; //2023.08.23 @kchanyou
   CVD::Image<Vector<2> > mimImageJacs;
   bool mbMadeJacs;
   static CVD::ImageRef mirSize;

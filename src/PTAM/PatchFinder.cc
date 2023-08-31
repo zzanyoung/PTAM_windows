@@ -105,6 +105,7 @@ void PatchFinder::MakeTemplateCoarseCont(MapPoint &p)
   // Need to regen template? Then go ahead.
   if(bNeedToRefreshTemplate)
     {
+      //std::cout << "mimTemplate 333333" << std::endl;
       int nOutside;  // Use CVD::transform to warp the patch according the the warping matrix m2
                      // This returns the number of pixels outside the source image hit, which should be zero.
       nOutside = CVD::transform(p.pPatchSourceKF->aLevels[p.nSourceLevel].im, 
