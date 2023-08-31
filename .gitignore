@@ -1,0 +1,5 @@
+# Ignore Visual Studio Code generated files
+.vs/
+
+# Ignore IntelliSense cache files
+**/*.ipch
