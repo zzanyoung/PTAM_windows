@@ -1,6 +1,6 @@
 # PTAM_x64
 
-PTAM running on Windows.
+A project that contains the libraries (CVD, OpenCV, etc.) required to run ptam on Windows.
 
 - #### Executable file path
 
