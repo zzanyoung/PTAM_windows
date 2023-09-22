@@ -1,5 +1,7 @@
 # PTAM_x64
 
+Running PTAM in openCV camera and Windows environment
+
 A project that contains the libraries (CVD, OpenCV, etc.) required to run ptam on Windows.
 
 - #### Executable file path
