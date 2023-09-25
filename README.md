@@ -1,4 +1,4 @@
-# PTAM_x64
+# PTAM_windows
 
 Running PTAM in openCV camera and Windows environment
 
